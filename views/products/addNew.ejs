@@ -1,0 +1,43 @@
+
+    <%- include("partials/header") %>
+        <%- include("partials/navbar") %>
+       <div class="container fluid"> 
+    <h2>Add Product</h2>
+
+    <form action="/products" method="POST">
+        <label for="name">Name :</label>
+        <input type="text" name="name" required placeholder="Enter product name">
+<br>
+        <label for="price">Price :</label>
+        <input type="number" name="price" required placeholder="Enter amount  (Kshs)">
+<br>
+        <label for="status">Status :</label>
+        <select name="status" id="status" required>
+            <option value="new">New</option>
+            <option value="refubrished">Refubrished</option>
+        </select>
+        <br>
+        <label for="type">Type :</label>
+        <input type="text" name="type" id="type" placeholder="Enter type">
+        <br>
+        <label for="category">Category :</label>
+        <select name="category"id="category"required>
+
+            <% for(let category of categories){ %>
+                  <option value="<%=category%>"<%=category%> > <%=category%></option>
+                <% } %>
+
+                    <!-- <option value="electronics">Electronics</option>
+                    <option value="cerals">Cereals</option>
+                    <option value="floor">Floor</option>
+                    <option value="detergents">Utensils</option>
+                    <option value="detergents">Detergents</option> -->
+        </select>
+        <br>
+
+        <button>Save Product</button>
+    </form>
+    <br>
+    <!-- <a href="/products"> <button class="btn btn-primary">Back to Products</button></a> -->
+</div>
+<%- include("partials/footer") %>

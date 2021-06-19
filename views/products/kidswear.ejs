@@ -1,0 +1,25 @@
+<%- include("partials/header") %>
+    <%- include("partials/navbar") %>
+
+        <div class="container">
+            <h1>Kids Dress</h1>
+            <ul>
+                <% for(let kid of kidswear){ %>
+                    <li>
+                        <%= kid.name %> <a href="/details/<%= kid._id %> ">see more</a>
+                    </li>
+
+                    <% } %>
+                        <br>
+
+                        <!-- <a href="/men"><button>Men's Wear</button></a>
+                        <a href="/women"><button>Womem Dress</button></a> -->
+                        <br>
+                        <br>
+                        <a href="/clothes">Clothes Categry</a>
+        </div>
+        </ul>
+        </div>
+
+
+        <%- include("partials/footer") %>

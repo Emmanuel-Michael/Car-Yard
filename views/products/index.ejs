@@ -1,0 +1,61 @@
+<%- include("partials/header") %>
+    <%- include("partials/navbar") %>
+<h1> Our Stock Products</h1>
+    <div class="container">
+  <div class="row flex-xl-nowrap">
+    <div class="card-deck">
+        <div class="card border-0 col-sm-4 p-0">
+          <img class="card-img-top" src="https://images.unsplash.com/photo-1581993192008-63e896f4f744?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGVsZWN0cm9uaWNzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title h4">Limted Offers!!</h4>
+            <p class="card-text">We have unbeatable deals and amazing discounts on our products</p>
+            <h5 class="card-date"><a href="/electronics">Electronics</a></h5>
+          </div>
+        </div>
+        <div class="card border-0 col-sm-4 p-0">
+          <img class="card-img-top" src="https://images.unsplash.com/photo-1611633249734-d344363b0048?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8ZnVybml0dXJlc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title h4">Limted Offers!!</h4>
+            <p class="card-text">Avoid Crowds, stay safe and shop from the comfort of your home.</p>
+            <h5><a href="/furniture">Furniture</a></h5>
+          </div>
+        </div>
+        <div class="card border-0 col-sm-4 p-0">
+          <img class="card-img-top" src="https://images.unsplash.com/photo-1540221652346-e5dd6b50f3e7?ixid=MnwxMjA3fDB8MHxzZWFyY2h8N3x8Y2xvdGhlc3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title h4">Limted Offers!!</h4>
+            <p class="card-text">Buy One, Get One Free. We all use these offers are available.</p>
+            <h5><a href="/clothes">Clothes</a></h5>
+          </div>
+        </div>
+        <div class="card border-0 col-sm-4 p-0">
+          <img class="card-img-top" src="https://images.unsplash.com/photo-1560350824-8828864cdef1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTl8fGZvb2QlMjBtYXJrZXR8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="Card image cap">
+          <div class="card-body">
+            <h4 class="card-title h4">Limted Offers!!</h4>
+            <p class="card-text">Home Essentials from top brands with amazing discounts</p>
+            <h5><a href="/food">Food</a></h5>
+          </div>
+        </div>
+    </div>
+  </div>
+</div>
+    <!-- <h2> <%= category %> products </h2>
+    
+    <ul>
+        <% for(let product of products) { %>
+            <a href="/products/<%= product._id %>">
+                <li> <a href="/details/<%= product._id %> "><%=product.name%></a></li>
+            </a>
+        <% } %> 
+    </ul> -->
+    <br>
+    <!-- <a href="/addNew"> <button>Add a Product</button></a> -->
+    <br>
+    <br>
+    <% if(category !== "All Stock") { %>
+        <!-- <a href="/products"><button>All Products</button></a> -->
+    <% } %>
+    <!-- <%if(category !==  'Floor'){%>
+    <%}%> -->
+
+    <%- include("partials/footer") %>

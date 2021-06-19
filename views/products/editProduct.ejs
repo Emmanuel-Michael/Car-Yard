@@ -1,0 +1,43 @@
+<%- include("partials/header") %>
+    <%- include("partials/navbar") %>
+
+    <h5>Edit your Product</h5>
+    <hr>
+    <h5>
+      Name:  <%= product.name %>
+    </h5>
+    <h5>
+      Price:  <%= product.price %>
+    </h5>
+    <h5>
+      Category:  <%= product.category %>
+    </h5>
+    <h5>
+    </h5>
+    <form class ="form" action="/products/<%= product._id %>?_method=PUT" method="POST">
+        <p>Edit name</p>
+        <input type="text" name="name" value="<%=product.name%>">
+
+        <p>Edit price</p>
+        <input type="number" name="price" value="<%=product.price%>">
+       
+ 
+ <p>Edit price</p>
+        <select name="category">
+
+            <% for(let category of categories) { %>
+                <option value="<%=category%>"<%=product.category===category?"selected" : "" %> > <%=category%>
+                </option>
+                <% } %>
+
+        </select>
+        <br>
+          <br>
+        <select name="status" id="status" required>
+            <option value="new">New</option>
+            <option value="refubrished">Refubrished</option>
+        </select>
+        
+        <button  class="btn btn-success ">Save changes</button>
+    </form>
+<%- include("partials/footer") %>

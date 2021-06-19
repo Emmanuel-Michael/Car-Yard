@@ -1,0 +1,25 @@
+<%- include("partials/header") %>
+    <%- include("partials/navbar") %>
+
+        <div class="container">
+            <h1>Uffer Radios</h1>
+            <ul>
+                <% for(let radio of uffer){ %>
+                    <li>
+                        <%= radio.name %> <a href="/details/<%= radio._id %> ">see more</a>
+                    </li>
+
+                    <% } %>
+                        <br>
+                        <!-- <a href="/subuffer"><button>Sub-Uffer  Radios</button></a> -->
+                        <!-- <a href="/digital TVs"><button>Digital TVs</button></a> -->
+
+                        <br>
+                        <br>
+                        <a href="/radios">Radio Categories</a>
+        </div>
+        </ul>
+        </div>
+
+
+        <%- include("partials/footer") %>

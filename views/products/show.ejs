@@ -1,0 +1,31 @@
+
+<%- include("partials/header") %>
+    <%- include("partials/navbar") %>
+
+
+    <h2> <%= product.category%> </h2>
+    <ul>
+        <li>Name: <%= product.name  %></li>
+        <li>Price Kshs: <%=product.price%></li>
+        <%if(product.category === 'Food'){%>
+             <li>Type: <%=product.type%></li>
+        <%}else{%>
+          <li>Status: <%= product.status%> </li>
+        <%}%>
+       
+        <li>Category:  <%= product.category %></a></li>
+        <a href="/products?category=<%= product.category%>">see more <%= product.category%></a>
+
+    <!-- <a href="/products"> <button>Back to products</button></a> -->
+    <br>
+    <br>
+    <a href="/products/<%= product._id %>/editProduct"> <button class="btn btn-primary">Edit product details</button></a>
+    <br>
+    <br>
+    <form action="/products/<%= product._id %>?_method=DELETE" method="POST">
+        <button class=" btn btn-danger" mt-3> <i class="fa fa-trash" aria-hidden="true"></i> Delete product</button>
+
+<%- include("partials/footer")%>
+
+
+

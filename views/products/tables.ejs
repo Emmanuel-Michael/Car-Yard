@@ -1,0 +1,24 @@
+<%- include("partials/header") %>
+    <%- include("partials/navbar") %>
+
+        <div class="container">
+            <h1>Tables</h1>
+            <ul>
+                <% for(let table of tables){ %>
+                    <li>
+                        <%= table.name %> <a href="/details/<%= table._id %> ">see more</a>
+                    </li>
+
+                    <% } %>
+                        <br>
+                        <!-- <a href="/chairs"><button>Chairs</button></a>
+                        <a href="/beds"><button>Bedding</button></a> -->
+                        <br>
+                        <br>
+                        <a href="/furniture">back to all Furniture</a>
+        </div>
+        </ul>
+        </div>
+
+
+        <%- include("partials/footer") %>

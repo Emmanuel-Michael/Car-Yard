@@ -1,0 +1,28 @@
+<%- include("partials/header") %>
+    <%- include("partials/navbar") %>
+
+        <div class="container">
+            <h1>Tecno Mobiles</h1>
+            <ul>
+                <% for(let phone of tecno){ %>
+                    <li>
+                        <%= phone.name %> <a href="/details/<%= phone._id %> ">see more</a>
+                    </li>
+
+                    <% } %>
+                        <!-- <a href="/iphones"><button>iPhones</button></a>
+                        <a href="/huawei"><button>Huawei</button></a>
+                        <a href="/infinix"><button>Infinix</button></a> -->
+
+                        <!-- Back to phones category home -->
+                        <br>
+                        <br>
+                        <a href="/phones">Phone Categories</a>
+        </div>
+        <br>
+        <a href="/electronics"></a>
+        </ul>
+        </div>
+
+
+        <%- include("partials/footer") %>

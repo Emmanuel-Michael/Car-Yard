@@ -1,0 +1,25 @@
+<%- include("partials/header") %>
+    <%- include("partials/navbar") %>
+
+        <div class="container">
+            <h1>MacBook Laptops</h1>
+            <ul>
+                <% for(let laptop of macbook){ %>
+                    <li>
+                        <%= laptop.name %> <a href="/details/<%= laptop._id %> ">see more</a>
+                    </li>
+
+                    <% } %>
+                        <!-- <br>
+                    <a href="/lg"><button>more sm</button></a> -->
+                        <!-- <a href="/hissense"><button>Hissense</button></a> -->
+                        <a href="/windows"><button>MacBook Laptops</button></a>
+                        <br>
+                        <br>
+                        <a href="/laptops">All laptop categries</a>
+        </div>
+        </ul>
+        </div>
+
+
+        <%- include("partials/footer") %>

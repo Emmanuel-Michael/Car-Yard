@@ -1,0 +1,23 @@
+<%- include("partials/header") %>
+    <%- include("partials/navbar") %>
+
+        <div class="container">
+            <h1>Smart TVs</h1>
+            <ul>
+               <% for(let tv of smart){ %>
+                   <li><%= tv.name  %> <a href="/details/<%= tv._id %> ">see more</a> </li>
+
+              <% } %>
+              <br>
+                    <!-- <br>
+                    <a href="/lg"><button>more sm</button></a> -->
+                    <!-- <a href="/hissense"><button>Hissense</button></a> -->
+                    <!-- <a href="/digital"><button btn btn-success>Digital TVs</button></a> -->
+                    <br>
+                    <a href="/tvs">TVs Categories</a>
+                    </div>
+            </ul>
+        </div>
+
+
+        <%- include("partials/footer") %>
