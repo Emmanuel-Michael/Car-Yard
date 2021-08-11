@@ -6,7 +6,13 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "keywords": ["JS", "NodeJS", "Express", "Mongoose", "MongoDB"],
+  "keywords": [
+    "JS",
+    "NodeJS",
+    "Express",
+    "Mongoose",
+    "MongoDB"
+  ],
   "author": "Emmanuel",
   "license": "ISC",
   "dependencies": {
@@ -15,5 +21,14 @@
     "method-override": "^3.0.0",
     "mongoose": "^5.11.16",
     "uuid": "^8.3.2"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Emmanuel-Michael/Car-Yard.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Emmanuel-Michael/Car-Yard/issues"
+  },
+  "homepage": "https://github.com/Emmanuel-Michael/Car-Yard#readme"
 }
